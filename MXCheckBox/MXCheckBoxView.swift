@@ -111,7 +111,9 @@ extension MXCheckBoxView : MXCheckBoxButtonDelegate,MXItemsCheckViewDelegate{
                     self?.checkButton.shrinkAnimation()
                 }
                 //位置
-                self.delegate.checkBox(checkBoxView: self, didSelect: at!)
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                    self.delegate.checkBox(checkBoxView: self, didSelect: at!)
+                })
             }
             break
         default:
