@@ -15,4 +15,4 @@ self.boxView.delegate = self
 self.boxView.show()
 ```
 
-`Detail`:[传送门](http://www.jianshu.com/p/e1185d4872b9)
+`Detail`:[传送门](http://www.jianshu.com/p/eecdb07dfcd3)
